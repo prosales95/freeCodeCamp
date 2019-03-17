@@ -70,7 +70,12 @@ function dropElements(arr, func) {
     arr.shift();
   }
   return arr;
+  
+  function dropElements(arr,func) {
+return arr.findIndex(func)>=0? arr.slice(arr.findIndex(func)):[];
+}
 }
 ```
+
 
 </section>
